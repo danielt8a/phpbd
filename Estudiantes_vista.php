@@ -24,8 +24,15 @@
 
 		];
 
-		$estudiante->Insertar($alumno);
+		#$estudiante->Insertar($alumno);
 
+	?>
+
+	<h3>R: Leer/Consultar</h3>
+	<?php
+
+		$resultados = $estudiante->consultar();
+		var_dump($resultados);
 	?>
 </body>
 </html>

@@ -33,6 +33,10 @@
 			$conexion = parent::conectar();
 			try {
 
+				$query = "SELECT * FROM usuarios";
+
+				return $consulta = $conexion->query($query)->fetchAll();
+
 			}catch (Expception $e){
 				exit("Error: ".$e->getMessage());
 			}

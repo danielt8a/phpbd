@@ -21,6 +21,10 @@
 				$dsn = "mysql:host=".self::$db_servidor.";dbname=".self::$db_nombre;
 				$pdo = new PDO($dsn, self::$db_usuario, self::$db_pass);
 				$pdo->exec("SET CHARACTER SET".self::$db_charset);
+				$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+				$pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+
+
 				return $pdo;
 
 			} catch (PDOException $e) {
