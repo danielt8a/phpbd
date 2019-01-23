@@ -17,7 +17,7 @@
 
 			try{
 
-				$query = "INSERT INTO usuarios SET name=:name, apellido_paterno=:apellido_paterno, apellido_materno=:apellido_materno, email=:email";
+				$query = "INSERT INTO usuarios SET name=:nombre, apellido_paterno=:paterno, apellido_materno=:materno, email=:email";
 				#prepare - Preparación del query
 				#execute - Ejecuta el query
 				$insertar = $conexion->prepare($query)->execute($registro);

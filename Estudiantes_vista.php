@@ -17,9 +17,9 @@
 	<h3>C: Insertar</h3>
 	<?php
 		$alumno = [
-			'name' => 'Daniel',
-			'apellido_paterno' => 'Telles',
-			'apellido_materno' => 'Ochoa',
+			'nombre' => 'Daniel',
+			'paterno' => 'Telles',
+			'materno' => 'Ochoa',
 			'email' => 'danieltelles@gmail.com'
 
 		];
